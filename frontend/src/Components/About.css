@@ -1,0 +1,118 @@
+.about-section {
+  background-color: #ffffff; /* Changed to white background */
+  color: #000000; /* Changed to black text */
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.text-purple {
+  color: #7b2cbf;
+}
+
+.value-card {
+  background-color: #ffffff; /* Changed to white card */
+  color: #000000; /* Changed to black text inside card */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Neutral black shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3); /* Stronger hover shadow */
+}
+
+.card-title {
+  color: #000000; /* Changed to black */
+  font-weight: 600;
+}
+
+.card-text {
+  color: #333333; /* Dark grey for contrast */
+}
+
+.text-primary {
+  color: #5e60ce !important;
+  font-weight: 500;
+}
+
+/* Team card styles */
+.card {
+  background-color: #ffffff; /* Changed to white card */
+  color: #000000; /* Changed text to black */
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.card img {
+  height: 350px;
+  object-fit: cover;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+h1, h2 {
+  color: #000000; /* Headings to black */
+  font-weight: 700;
+}
+
+.text-light {
+  color: #444444 !important; /* Changed to dark grey */
+}
+
+.about-highlight-section {
+  background: linear-gradient(to right, #7c63a1, #c2dd90); /* Black gradient */
+  color: #000000; /* Text black */
+  border-radius: 12px;
+  padding: 40px 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.section-title {
+  color: #000000; /* Black */
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.section-description {
+  color: #2c2c2c; /* Dark text */
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #000000, #555555); /* Black gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+}
+
+.custom-carousel .carousel-item {
+  padding: 10px;
+}
+
+.custom-carousel .card {
+  background-color: #ffffff; /* White cards */
+  color: #000000; /* Black text */
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.custom-carousel .card-img-top {
+  height: 300px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .card-img-top {
+    object-fit: contain !important;
+  }
+}

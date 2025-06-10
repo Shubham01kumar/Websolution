@@ -1,0 +1,48 @@
+.contact-section {
+  color: linear-gradient(135deg, #2c2c45, #1a1a2e);
+  background-color: white;
+  
+
+  
+}
+
+.contact-form {
+  background: linear-gradient(145deg, #483939, #312e53);
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform-style: preserve-3d;
+  perspective: 800px;
+  margin-bottom: 5px;
+  
+}
+
+.contact-form:hover {
+  transform: rotateY(5deg) scale(1.02);
+  box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.3);
+  
+}
+
+.contact-form label {
+  font-weight: 600;
+  color: #333;
+}
+
+.btn-3d {
+  background: linear-gradient(145deg, #4a90e2, #357abd);
+  border: none;
+  color: white;
+  font-weight: 600;
+  box-shadow: 5px 5px 15px rgba(53, 122, 189, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-3d:hover {
+  background: linear-gradient(145deg, #357abd, #4a90e2);
+  transform: translateY(-3px);
+  box-shadow: 7px 7px 20px rgba(53, 122, 189, 0.8);
+}
+
+.info-s{
+  margin-top: auto;
+}

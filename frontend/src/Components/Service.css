@@ -1,0 +1,39 @@
+.service-section {
+  color: linear-gradient(135deg, #141e30, #243b55); /* Dark blue stylish bg */
+  background-color: white;
+}
+
+.service-card {
+    color: aliceblue;
+  background: #333;
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  padding: 30px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transform-style: preserve-3d;
+}
+
+.service-card:hover {
+  transform: rotateY(6deg) scale(1.04);
+  box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+.service-title {
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.service-desc {
+  white-space: pre-line;
+  font-size: 0.95rem;
+}
+.head-service{
+
+   background: linear-gradient(to right, #8a3f77, #b3bb7b); /* Black gradient */
+  color: #000000; /* Text black */
+  border-radius: 40px 12px;
+  padding:  20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}

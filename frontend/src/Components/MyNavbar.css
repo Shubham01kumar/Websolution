@@ -1,0 +1,97 @@
+/* Navbar container with gradient background and blur */
+
+.navbar {
+  /* background: linear-gradient(90deg, rgba(229, 231, 232, 0.8), rgba(225, 215, 236, 0.8)); */
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.4s ease;
+  height: auto;
+  margin-top: 15px;
+  border-radius: 40px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+
+/* Navbar brand with glowing hover effect */
+.websolution-brand {
+  
+  font-size: 8.8rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+  letter-spacing: 2px;
+  display: inline-block;
+}
+
+.websolution-brand:hover {
+  transform: scale(1.1);
+  text-shadow: 0 0 10px #fff, 0 0 20px #007bff, 0 0 30px #6610f2;
+}
+
+/* Color gradient letters */
+.websolution-brand .color1 { color: #007bff; }
+.websolution-brand .color2 { color: #6610f2; }
+.websolution-brand .color3 { color: #20c997; }
+.websolution-brand .color4 { color: #fd7e14; }
+
+
+.l-nav{
+ font-size: x-large; 
+}
+/* Navbar links */
+/* Navbar links */
+.nav-link {
+  
+  
+  /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style:inherit ;     /* Italic style */
+  /* text-transform: uppercase;Make text uppercase */
+  letter-spacing: 1px;      /* Space between letters */
+  color: #0553a2 !important;
+  margin-left: 20px;
+  position: relative;
+  transition: all 0.3s ease;
+  text-shadow: 0 1px 2px rgba(244, 7, 7, 0.2);
+}
+
+
+
+/* Fancy hover underline */
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 4px;
+  display: block;
+  margin-top: 4px;
+  right: 0;
+  background: #e9a105;
+  transition: width 0.3s ease;
+  left: 0;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  
+}
+
+.nav-link:hover {
+  color: #ffc107 !important;
+}
+
+/* Active link */
+.nav-link.active {
+  color: #ffdd57 !important;
+}
+
+/* Toggle icon color */
+.navbar-toggler {
+  border-color: #ffc107;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 193, 7, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
