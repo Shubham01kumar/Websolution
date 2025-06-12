@@ -1,5 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
+import hero from '../assets/slider2.jpg';
+                  
 
 function Home() {
   return (
@@ -22,12 +24,13 @@ function Home() {
               Learn More
             </Button>
           </Col>
-          <Col md={12} lg={6} className="text-center  mt-md-0">
-          <img 
-          src="/src/assets/slider2.jpg" 
-          alt="Home"  
-          style={{ width: "100%",marginTop:"3.5px", height: "60%", objectFit: "cover" }} 
-          />
+          <Col md={12} lg={6} className="text-center  mt-md-0     ">
+         <img 
+         src={hero} 
+         alt="Home"  
+         style={{ width: "100%", marginTop: "3.5px", height: "60%", objectFit: "cover" }} 
+         />
+
               {/* <img
               src="https://assets.zyrosite.com/Aq20eV79zLfpXV6b/bb375cdd655184ca2715ac5059e73651-YX4ZEeZEvbhrMMZa.gif"
               alt="Gradient GIF"

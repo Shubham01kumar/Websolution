@@ -1,11 +1,18 @@
 // MyNavbar.jsx
-import React from 'react';
-import { Navbar, Nav, Container } from 'react-bootstrap';
+import React, { useState } from 'react';
+
+
+import { Navbar, Nav, Container, Collapse} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 import './MyNavbar.css';
 
 function MyNavbar() {
+   const [expanded, setExpanded] = useState(false);
+
+  const toggleNavbar = () => setExpanded(!expanded);
+  const closeNavbar = () => setExpanded(false);
+
   return (
     <Navbar bg="light" expand="md" sticky="top">
       <Container>
@@ -22,14 +29,30 @@ function MyNavbar() {
   <span className="color2">o</span>
   <span className="color3">n</span>
 </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav " />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto  fw-bold l-nav">
+
+
+{/* Toggle Button */}
+        <button
+          aria-controls="basic-navbar-nav"
+          aria-expanded={expanded}
+          onClick={toggleNavbar}
+          className="navbar-toggler border-0"
+          type="button"
+        >
+          <span style={{ fontSize: '1.8rem' }}>
+            {expanded ? '❌' : '☰'}
+          </span>
+        </button>
+        <Navbar.Collapse in={expanded}  >
+          <div id="basic-navbar-nav">
+
+          <Nav className="ms-auto  fw-bold l-nav"  onClick={closeNavbar}>
             <Nav.Link as={Link} to="/">Home</Nav.Link>
             <Nav.Link as={Link} to="/About">About</Nav.Link>
             <Nav.Link as={Link} to="/Service">Service</Nav.Link>
             <Nav.Link as={Link} to="/Contact">Contact</Nav.Link>
           </Nav>
+          </div>
         </Navbar.Collapse>
       </Container>
     </Navbar>
