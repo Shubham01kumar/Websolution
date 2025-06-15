@@ -26,30 +26,39 @@ const processSteps = [
 ];
 
 
-
-
+ 
 const AdminPanel = () => {
-  const navigate = useNavigate();
-  const [loading, setLoading] = useState(true);
+  // const navigate = useNavigate();
+  // const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    const token = localStorage.getItem('adminToken');
+  // useEffect(() => {
+  //   const token = localStorage.getItem('adminToken');
 
-    if (!token) {
-      navigate('/admin');
-    } else {
-      setLoading(false);
-    }
-  }, [navigate]);
+  //   if (!token) {
+  //     navigate('/admin');
+  //   } else {
+  //     setLoading(false);
+  //   }
+  // }, [navigate]);
+
+  // const handleLogout = () => {
+  //   localStorage.removeItem('isAuth'); // ❌ Remove token
+  //   navigate('/admin'); // 🔁 Redirect to login page
+  // };
+
+  // if (loading) {
+  //   return <div className="text-center mt-5">Checking authentication...</div>;
+  // }
+
+
+
+   const navigate = useNavigate();
 
   const handleLogout = () => {
-    localStorage.removeItem('adminToken'); // ❌ Remove token
-    navigate('/admin'); // 🔁 Redirect to login page
+    localStorage.removeItem("isAuth");
+    navigate("/admin");
   };
 
-  if (loading) {
-    return <div className="text-center mt-5">Checking authentication...</div>;
-  }
 
   return (
     <div className="container mt-4">

@@ -7,8 +7,10 @@ function Footer() {
     <footer className="bg-dark text-white py-4 mt-5">
       <Container>
         <Row>
-          <Col md={4} className="mb-3 mb-md-0">
-            <h5>WebSolution</h5>
+          <Col md={4} className="mb-3 mb-md-0 ">
+            
+            <Link as={Link} to="/admin"> <h5 className=' text-white'>WebSolution</h5></Link>
+
             <p>Connecting community, preserving culture, and building a brighter future together.</p>
           </Col>
 

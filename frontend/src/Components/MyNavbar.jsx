@@ -39,12 +39,12 @@ function MyNavbar() {
           className="navbar-toggler border-0"
           type="button"
         >
-          <span style={{ fontSize: '1.8rem' }}>
+          <span style={{ fontSize: '1.3rem' }}>
             {expanded ? '❌' : '☰'}
           </span>
         </button>
         <Navbar.Collapse in={expanded}  >
-          <div id="basic-navbar-nav">
+          <div className="basic-navbar-nav ">
 
           <Nav className="ms-auto  fw-bold l-nav"  onClick={closeNavbar}>
             <Nav.Link as={Link} to="/">Home</Nav.Link>

@@ -92,8 +92,8 @@ const Contact = () => {
                 </Form.Select>
               </Form.Group>
 
-              <Form.Group className="mb-3" controlId="formMessage">
-                <Form.Label>Message</Form.Label>
+              <Form.Group className="mb-3 " controlId="formMessage">
+                <Form.Label >Message</Form.Label>
                 <Form.Control
                   as="textarea"
                   rows={4}

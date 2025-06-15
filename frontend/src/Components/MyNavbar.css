@@ -35,9 +35,15 @@
 .websolution-brand .color3 { color: #20c997; }
 .websolution-brand .color4 { color: #fd7e14; }
 
+.basic-navbar-nav{
+  margin-left:auto;
+  
+
+}
 
 .l-nav{
  font-size: x-large; 
+ margin-left: 90px;
 }
 /* Navbar links */
 /* Navbar links */
@@ -52,6 +58,7 @@
   letter-spacing: 1px;      /* Space between letters */
   color: #0553a2 !important;
   margin-left: 20px;
+  
   position: relative;
   transition: all 0.3s ease;
   text-shadow: 0 1px 2px rgba(244, 7, 7, 0.2);
@@ -88,10 +95,6 @@
 }
 
 /* Toggle icon color */
-.navbar-toggler {
+/* .navbar-toggler {
   border-color: #ffc107;
-}
-
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 193, 7, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
+} */
